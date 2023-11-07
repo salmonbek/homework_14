@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="theme-color" content="#57b8ff" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inf</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="loading">
+    <div class="loader_wedgit">
+      <div class="loaders">
+        <div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header id="header" class="header">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navigation">
+          <a href="#" class="site__logo-link">
+            <img src="images/logo.svg" alt="veb site logo" class="site__logo" />
+          </a>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#section-two" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#section-three" class="nav-link">Team</a></li>
+            <li class="nav-item"><a href="#section-four" class="nav-link">Shop</a></li>
+            <li class="nav-item"><a href="#section-five" class="nav-link">Pages</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-btn">Contact Us</a>
+              <a class="language" href="./pages/page-uzb.html">eng</a>
+            </li>
+          </ul>
+          <div class="site__btn-group">
+            <button class="btn-darkmode" onclick="darkMode()">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M24 42C19 42 14.75 40.25 11.25 36.75C7.75 33.25 6 29 6 24C6 19 7.75 14.75 11.25 11.25C14.75 7.75 19 6 24 6C24.2667 6 24.55 6.00833 24.85 6.025C25.15 6.04167 25.5333 6.06667 26 6.1C24.8 7.16667 23.8667 8.48333 23.2 10.05C22.5333 11.6167 22.2 13.2667 22.2 15C22.2 18 23.25 20.55 25.35 22.65C27.45 24.75 30 25.8 33 25.8C34.7333 25.8 36.3833 25.4917 37.95 24.875C39.5167 24.2583 40.8333 23.4 41.9 22.3C41.9333 22.7 41.9583 23.025 41.975 23.275C41.9917 23.525 42 23.7667 42 24C42 29 40.25 33.25 36.75 36.75C33.25 40.25 29 42 24 42ZM24 39C27.6333 39 30.8 37.875 33.5 35.625C36.2 33.375 37.8833 30.7333 38.55 27.7C37.7167 28.0667 36.825 28.3417 35.875 28.525C34.925 28.7083 33.9667 28.8 33 28.8C29.1667 28.8 25.9083 27.4583 23.225 24.775C20.5417 22.0917 19.2 18.8333 19.2 15C19.2 14.2 19.2833 13.3417 19.45 12.425C19.6167 11.5083 19.9167 10.4667 20.35 9.3C17.0833 10.2 14.375 12.025 12.225 14.775C10.075 17.525 9 20.6 9 24C9 28.1667 10.4583 31.7083 13.375 34.625C16.2917 37.5417 19.8333 39 24 39Z"
+                  fill="white" />
+              </svg>
+            </button>
+            <button class="bars-nav" id="navbar-open">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+        <div id="navbar-responsive">
+          <button class="xmark-nav" id="navbar-close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <ul class="res__list">
+            <li class="res-item"><a href="#" class="res-link">Home</a></li>
+            <li class="res-item"><a href="#section-two" class="res-link">About</a></li>
+            <li class="res-item"><a href="#section-three" class="res-link">Team</a></li>
+            <li class="res-item"><a href="#" class="res-link">Shop</a></li>
+            <li class="res-item"><a href="#" class="res-link">Pages</a></li>
+            <li class="res-item">
+              <a href="#" class="res-nav-btn">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--  SITE HERO -->
+    <div class="container">
+      <div class="site__hero">
+        <div class="site__hero-left">
+          <p class="site__hero-subtitle">
+            <img src="images/image-a.svg" alt="images" /><span>FUTURE OF eSPORTS</span>
+          </p>
+          <h1 class="site__hero-heading">
+            Unleash the Next Generation of Gaming
+          </h1>
+          <p class="site__hero-paragriph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis,
+            nec donec in morbi pulvinar. Enim non pulvinar neque.
+          </p>
+          <a href="#" class="site__hero-btn btn-bg-blue">Explore More</a>
+          <a href="#" class="site__hero-btn btn-bgh-blue w-148">View our team</a>
+        </div>
+        <div class="site-hero__right">
+          <img src="images/hero.png" alt="hero images" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- main -->
+  <main class="main">
+    <section id="section-two" class="site__our">
+      <div class="container">
+        <h2 class="site__our-heading">Our Sponsors</h2>
+        <p class="site__our-paragriph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis, nec
+          donec in morbi pulvinar. Enim non pulvinar neque.
+        </p>
+        <div class="site__our-content">
+          <a href="#" class="site__our-link">
+            <img src="images/idea.svg" alt="edia svg" class="site__our-image" />
+          </a>
+          <a href="#" class="site__our-link">
+            <img src="images/amara.svg" alt="" class="site__our-image" />
+          </a>
+          <a href="#" class="site__our-link">
+            <img src="images/lightai.svg" alt="" class="site__our-image" />
+          </a>
+          <a href="#" class="site__our-link">
+            <img src="images/cricle.svg" alt="" class="site__our-image" />
+          </a>
+          <a href="#" class="site__our-link">
+            <img src="images/music.svg" alt="" class="site__our-image" />
+          </a>
+          <a href="#" class="site__our-link"><img src="images/lightai.svg" alt="" class="site__our-image" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="section-three" class="stop__shop">
+      <div class="container">
+        <div class="stop__shop-main">
+          <div class="stop__head">
+            <p class="stop__shop-subtitle">
+              <img class="esport" src="images/image-a.svg" alt="danger" />FUTURE OF eSPORTS
+            </p>
+            <h2 class="stop__shop-heading">
+              Your one stop shop gaming needs!
+            </h2>
+            <p class="stop__shop-paragriph">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam
+            </p>
+          </div>
+          <div class="stop__main">
+            <div class="stop__row">
+              <img src="images/cub.svg" alt="cub svg" />
+              <div class="stop__row-main">
+                <h4 class="stop__main-heading">All New Gameplay</h4>
+                <p class="stop__main-paragriph">
+                  Vivamus magna justo, lacinia eget coecetur sed, convallis at
+                  tellus. Curabitur non nulla sit Vestibum ante ipsum primis
+                  in faucibus orci
+                </p>
+              </div>
+            </div>
+            <div class="stop__row">
+              <img src="images/cub.svg" alt="cub svg" />
+              <div class="stop__row-main">
+                <h4 class="stop__main-heading">Generation Graphics</h4>
+                <p class="stop__main-paragriph">
+                  Vivamus magna justo, lacinia eget coecetur sed, convallis at
+                  tellus. Curabitur non nulla sit Vestibum ante ipsum primis
+                  in faucibus orci
+                </p>
+              </div>
+            </div>
+            <div class="stop__row">
+              <img src="images/cub.svg" alt="cub svg" />
+              <div class="stop__row-main">
+                <h4 class="stop__main-heading">Lastest Game Engine</h4>
+                <p class="stop__main-paragriph">
+                  Vivamus magna justo, lacinia eget coecetur sed, convallis at
+                  tellus. Curabitur non nulla sit Vestibum ante ipsum primis
+                  in faucibus orci
+                </p>
+              </div>
+            </div>
+            <div class="stop__row">
+              <img src="images/cub.svg" alt="cub svg" />
+              <div class="stop__row-main">
+                <h4 class="stop__main-heading">Multiplayer on the go</h4>
+                <p class="stop__main-paragriph">
+                  Vivamus magna justo, lacinia eget coecetur sed, convallis at
+                  tellus. Curabitur non nulla sit Vestibum ante ipsum primis
+                  in faucibus orci
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="section-four" class="future">
+      <div class="container">
+        <div class="future__main">
+          <div class="future__left">
+            <p class="sub-title">
+              <img src="images/image-a.svg" alt="images" />
+              FUTURE OF eSPORTS
+            </p>
+            <h2 class="future-heading">The new era of cloud gaming here</h2>
+            <p class="future-paragriph">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae
+              vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+            </p>
+            <a href="#" class="future-btn">Explore More</a>
+          </div>
+          <div class="future__right">
+            <figcaption class="future-pic">
+              <picture class="future-parent">
+                <img class="gamer" src="images/gamer-right.svg" alt="images" />
+                <img class="play-btn" src="images/play-btn.svg" alt="images">
+              </picture>
+            </figcaption>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- news start -->
+    <section id="section-five" class="news">
+      <div class="container">
+        <!-- sourses -->
+        <div class="sourses">
+          <!-- above-head -->
+          <div class="above-head">
+            <div class="article">
+              <p class="sub-title">
+                <img class="" src="images/image-a.svg" alt="images" />
+                FUTURE OF eSPORTS
+              </p>
+              <p class="news-articles1">Latest News &</p>
+              <p class="news-articles2">Articles</p>
+            </div>
+            <div class="btn-more">
+              <a class="read__more" href="#">
+                Read more
+              </a>
+            </div>
+          </div>
+          <!-- above-head -->
+          <!-- advertismant -->
+          <div class="advertismant">
+            <div class="data">
+              <img src="images/plastation-left.svg" alt="images" class="joystick">
+              <p class="date">April 2, 2021</p>
+              <p class="team">Esports Group teams up with the Indianapolis Colts</p>
+            </div>
+            <div class="right-section">
+              <div class="part-area">
+                <img class="furniture" src="images/part1.svg" alt="images">
+                <p class="date2">April 2, 2021</p>
+                <p class="simple">NAVI reveals s1mple fifth anniversary</p>
+                <div class="low-section">
+                  <img class="furniture" src="images/part3.svg" alt="images">
+                  <p class="date2">April 2, 2021</p>
+                  <p class="simple">T1 unveil partnership with Razer</p>
+                </div>
+              </div>
+              <div class="part-area">
+                <img class="furniture" src="images/part2.svg" alt="images">
+                <p class="date2">April 2, 2021</p>
+                <p class="simple">A1esports Shares new picture</p>
+                <div class="low-section">
+                  <img class="furniture" src="images/part4.svg" alt="images">
+                  <p class="date2">April 2, 2021</p>
+                  <p class="simple">RX secures content partnership with</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- advertismant -->
+        </div>
+        <!-- sourses -->
+      </div>
+      <!-- news start -->
+    </section>
+  </main>
+  <!-- main -->
+  <footer class="footer">
+    <section id="finally">
+      <div class="container">
+        <div class="all">
+          <div class="comounity">
+            <p class="gaming-comunity">Join the largest gaming community</p>
+            <p class="small-paragrap">Nulla porttitor accumsan tincidunt. Curabitur non nulla sit amet nisl tempus</p>
+            <p class="after-gaming-comunity">lectus. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut
+              libero malesu ada feugiat. Nulla quis lorem ut
+              libero malesuada feugiat. Vivamus magna justo</p>
+          </div>
+          <!-- input section start -->
+          <div class="sub_information">
+            <div class="box-first">
+              <input class="box-area" placeholder="Your Email Adress" type="email">
+            </div>
+            <div class="box-sub">
+              <button class="sub-btn">
+                Subscribe Now
+              </button>
+            </div>
+          </div>
+          <!-- input section end -->
+        </div>
+    </section>
+  </footer>
+
+  <!-- script -->
+  <script src="js/main.js"></script>
+  <!-- script -->
+</body>
+
+</html>
